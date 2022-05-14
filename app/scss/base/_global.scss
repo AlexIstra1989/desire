@@ -1,0 +1,35 @@
+html,
+body {
+ height: 100%;
+}
+
+body {
+ @extend %open-regular;
+ font-size: 16px;
+ color: $primaryColor;
+}
+
+.wrapper {
+ display: flex;
+ flex-direction: column;
+ min-height: 100%;
+}
+
+.main {
+ flex: 1 0 auto;
+}
+
+.footer {
+ flex: 0 0 auto;
+}
+
+.container {
+ max-width: 1140px;
+ padding: 0 15px;
+ margin: 0 auto;
+}
+
+.title {
+ @extend %montserrat-bold;
+ @include text(36px, 1.4);
+}
