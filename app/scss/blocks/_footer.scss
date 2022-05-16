@@ -79,6 +79,7 @@
    &::before {
     @include pseudo;
     left: 0;
+    top: 2px;
     width: 16px;
     height: 16px;
    }
@@ -86,20 +87,19 @@
 &__social-link--facebook::before {
  @include background(url("../images/icons/facebook.svg"));
 }
-&__social-link--instagram{
- @include background(url("../images/icons/facebook.svg"));
+&__social-link--instagram::before {
+ @include background(url("../images/icons/instagram.svg"));
 }
 &__social-link--pinterest::before {
- @include background(url("../images/icons/facebook.svg"));
+ @include background(url("../images/icons/pinterest.svg"));
 }
-&__social-link--facebook::before {
- @include background(url("../images/icons/facebook.svg"));
-}
-&__social-link--whatsapp::before {
- @include background(url("../images/icons/facebook.svg"));
+&__social-link---whatsapp::before {
+ @include background(url("../images/icons/whatsapp.svg"));
 }
 &__social-link--youtube::before {
- @include background(url(".../images/icons/facebook.svg"));
+ @include background(url("../images/icons/youtube.svg"));
+ height: 18px;
+ background-size: contain;
 }
 
 
