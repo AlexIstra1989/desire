@@ -1,0 +1,33 @@
+.blog-box {
+ padding-bottom: 90px;
+ &__title {
+  max-width: 430px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px;
+ }
+ &__inner {
+  display: flex;
+  justify-content: center;
+ }
+ &__item {
+  max-width: 540px;
+  width: 100%;
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+ }
+ &__image {
+  margin-bottom: 20px;
+ }
+ &__links {
+  @include text(14px, 2);
+  @extend %open-semibold;
+  color: #707070;
+  margin-bottom: 7px;
+ }
+ &__link {
+  @include text(24px, 1.5);
+  @extend %montserrat-bold;
+ }
+}

@@ -11,4 +11,18 @@ $(function () {
    dots: true,
    fade: true,
   });
+
+  var mixer = mixitup('.gallery__inner', {
+   load: {
+    filter: '.living'
+   },
+   animation: {
+    effects: 'fade translateZ(-100px)',
+    duration: 900,
+    effects: 'rotateY(-25deg)',
+    perspectiveDistance: '2000px'
+   }
+  });
+
+
 });

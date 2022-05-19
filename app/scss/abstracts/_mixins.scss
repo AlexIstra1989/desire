@@ -11,7 +11,7 @@
 
 @mixin background ($img) {
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
 	background-size: cover;
 	background-image: $img;
 }

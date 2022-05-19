@@ -1,33 +1,46 @@
 .top {
- @include background(url("../../images/top-bg.jpg"));
-  &__slider-item {
-   display: flex !important;
-   justify-content: center;
-   align-items: center;
-  }
-  &__slider-image {
-   margin-right: 38px;
-   max-width: 703px;
-   height: 815px;
-   object-fit: cover;
-  }
-  &__slider-title {
-   @include text(110px, 1.2);
-   @extend %montserrat-bold;
-   color: $titleColor;
-   max-width: 635px;
-   width: 100%;
-   padding-bottom: 26px;
-   margin-bottom: 24px;
-   position: relative;
-    &::after {
-     @include pseudo;
-     width: 185px;
-     height: 1px;
-     background-color: #979797;
-     bottom: 5px;
-     left: 0;
-    }
+ &__inner {
+  padding-bottom: 70px;
+  position: relative;
+   &::after {
+    position: absolute;
+    @include pseudo;
+    @include background(url("../images/top-bg.jpg"));
+    width: 100%;
+    height: 722px;
+    top: 0;
+    z-index: -1;
+   }
+ } 
+ &__slider-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+ }
+ &__slider-image {
+  margin-right: 25px;
+  max-width: 703px;
+  height: 815px;
+  object-fit: cover;
+  margin-left: -10%;
+ }
+ &__slider-title {
+  @include text(110px, 1.2);
+  @extend %montserrat-bold;
+  color: $titleColor;
+  max-width: 635px;
+  width: 100%;
+  padding-bottom: 26px;
+  margin-bottom: 24px;
+  position: relative;
+   &::after {
+    @include pseudo;
+    width: 185px;
+    height: 1px;
+    background-color: #979797;
+    bottom: 5px;
+    left: 0;
+   }
   }
   &__slider-text {
    max-width: 586px;
@@ -36,18 +49,23 @@
   .slick-dots {
    display: flex;
    justify-content: center;
+   align-items: center;
    font-size: 1px;
+   margin-top: -25px;
    position: relative;
-  }
-  .slick-dots li {
-   &:not(:last-child) {
-    margin-right: 30px;
+   li {
+    &:not(:last-child) {
+     margin-right: 30px;
+    }
+   }
+   button {
+    background-color: $titleColor;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
    }
   }
-  .slick-dots button {
-   background-color: $titleColor;
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
+  .slick-active button {
+   background-color: #FFEF35;
   }
 }
