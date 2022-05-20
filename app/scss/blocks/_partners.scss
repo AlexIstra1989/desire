@@ -1,0 +1,11 @@
+.partners {
+ padding-top: 25px;
+ &__inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 68px;
+ }
+ &__logo {
+  width: 100%;
+ }
+}

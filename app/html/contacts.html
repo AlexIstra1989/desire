@@ -1,0 +1,71 @@
+@include('./main/_head.html')
+
+<body>
+ <div class="wrapper">
+  @include('./main/_header.html')
+  <main class="main">
+   <div class="breadcrumbs">
+    <div class="container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="./index.html">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">Contacts</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="map">
+    <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12611.210170343691!2d-122.4157361079734!3d37.79466701991716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f18d8c6ea7%3A0x5d7f53fb70a3a903!2zNzI1IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1653078405764!5m2!1sru!2sru"
+     width="100%" height="578" style="border:0;" allowfullscreen="" loading="lazy"
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   <div class="contacts">
+    <div class="container">
+     <div class="contacts__title title">
+      <div class="contacts__inner">
+       <ul class="contacts__social__list">
+        <li class="contacts__social-item">
+         <a class="contacts__social-link" href="#">
+          <img class="contacts__social-logo" src="" alt="#">
+         </a>
+        </li>
+        <li class="contacts__social-item">
+         <a class="contacts__social-link" href="#">
+          <img class="contacts__social-logo" src="" alt="#">
+         </a>
+        </li>
+        <li class="contacts__social-item">
+         <a class="contacts__social-link" href="#">
+          <img class="contacts__social-logo" src="" alt="#">
+         </a>
+        </li>
+        <li class="contacts__social-item">
+         <a class="contacts__social-link" href="#">
+          <img class="contacts__social-logo" src="" alt="#">
+         </a>
+        </li>
+        <li class="contacts__social-item">
+         <a class="contacts__social-link" href="#">
+          <img class="contacts__social-logo" src="" alt="#">
+         </a>
+        </li>
+       </ul>
+       <p class="contacts__text">
+        Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street art.
+        Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack normcore. Lo-fi
+        pop-up banjo portland, echo park hammock
+       </p>
+       
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  @include('./main/_footer.html')
+ </div>
+</body>
+
+</html>

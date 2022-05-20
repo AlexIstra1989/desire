@@ -11,8 +11,9 @@
  box-shadow: -2px 3px 17px 0 #000;
  transition: all 0.5s;
  z-index: 111;
+ transform: translateX(100%);
  &.rightside-menu--close {
-  transform: translateX(100%);
+  transform: translateX(0);
  }
  &__close {
   cursor: pointer;

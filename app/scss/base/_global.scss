@@ -36,7 +36,35 @@ body {
  margin: 0 auto;
  padding: 0 10px;
 }
+
 .title {
  @extend %montserrat-bold;
  @include text(36px, 1.4);
+ color: $titleColor;
+}
+
+.breadcrumbs {
+ background-color: rgba(#DFDFDF, 0.5);
+ padding: 13px 14px;
+ &__list {
+  display: flex;
+ }
+ &__item {
+  position: relative;
+  &::after { 
+   @include pseudo;
+   content: "/";
+   right: -10px;
+   top: 2px;
+  }
+  &:not(:last-child) {
+   margin-right: 15px;
+  }
+  &:last-child::after {
+   display: none;
+  }
+ }
+ &__link {
+  @include text(14px,2);
+ }
 }

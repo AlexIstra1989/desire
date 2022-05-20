@@ -1,0 +1,61 @@
+.inspirations {
+ padding-top: 100px;
+ position: relative;
+ &::after {
+  @include pseudo;
+  @include background(url("../../images/inspirations-bg.jpg"));
+  height: 364px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+ }
+ &__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ &__image {
+  margin-right: 78px;
+  margin-left: -230px;
+ }
+ &__content {
+  max-width: 825px;
+  width: 100%;
+ }
+ &__title {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  &::after {
+   @include pseudo;
+   width: 200px;
+   height: 2px;
+   background-color: #6D7278;
+   border-radius: 1px;
+   bottom: 0;
+  }
+ }
+ &__text {
+  margin-bottom: 30px;
+ }
+ &__item {
+  @extend %montserrat-bold;
+  color: $titleColor;
+  line-height: 23px;
+  margin-bottom: 33px;
+ }
+ &__item-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #FFF;
+  border-radius: 4px;
+ } 
+ &__line {
+  height: 2px;
+  background-color: $titleColor;
+  border-radius: 4px;
+  margin-top: -2px;
+ }
+}
