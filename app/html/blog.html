@@ -1,0 +1,201 @@
+@include('./main/_head.html')
+
+<body>
+ <div class="wrapper">
+  @include('./main/_header.html')
+  <main class="main">
+   <div class="breadcrumbs">
+    <div class="container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="./index.html">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">Blog</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <section class="blog">
+    <div class="container">
+     <div class="blog__inner">
+      <div class="blog__items">
+       <div class="blog__item">
+        <a class="blog__image-link" href="#">
+         <img class="blog__image" src="images/blog/blog-image-1.jpg" alt="#">
+        </a>
+        <span class="blog__date"> August 15, 2020</span> |
+        <a class="blog__author" href="#">by Ann Summers</a> |
+        <a class="blog__theme" href="#">Bedroom Furniture</a>
+        <h5 class="blog__item-title">
+         Red selfies edison bulb four dollar toast humblebrag for the furniture
+        </h5>
+        <p class="blog__text">
+         Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg
+         tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock
+         palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb
+         farm-to-table
+        </p>
+       </div>
+       <blockquote class="blog__cite">
+        “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+        <span class="blog__cite-author">Paul Rand</span>
+       </blockquote>
+       <div class="blog__item blog__popup">
+        <div class="blog__popup-box">
+         <img class="blog__popup-image" src="images/blog/blog-image-2.jpg" alt="#">
+         <a class="blog__popup-link" href="https://www.youtube.com/watch?v=ZwSDlULbWNQ">
+          <img class="blog__popup-image" src="images/icons/play_button.svg" alt="play button">
+         </a>
+        </div>
+        <span class="blog__date"> August 15, 2020</span> |
+        <a class="blog__author" href="#">by Lux Morningstar</a> |
+        <a class="blog__theme" href="#">Design</a>
+        <h5 class="blog__item-title">
+         Authentic kogi shabby chic
+        </h5>
+       </div>
+       <div class="blog__item blog__slider"> 
+        <div class="blog__slider-box">
+         <img class="blog__slider-slide" src="images/slider/slide-2.jpg" alt="#">
+         <img class="blog__slider-slide" src="images/slider/slide-2.jpg" alt="#">
+         <img class="blog__slider-slide" src="images/slider/slide-2.jpg" alt="#">
+        </div>
+         <span class="blog__date">August 18, 2020</span> |
+          <a class="blog__author" href="#">by Ann Summers</a> |
+          <a class="blog__theme" href="#">Table Furniture</a>
+          <h5 class="blog__item-title">
+           Semiotics fixie four dollar toast, next level woke
+          </h5>
+          <p class="blog__text">
+           Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally
+           williamsburg
+           tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock
+           palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb
+           farm-to-table
+          </p>
+       </div>
+       <div class="pagination">
+        <a class="pagination__arrow" href="#">
+         <img class="pagination__arrow-icon" src="" alt="#">
+        </a>
+        <ul class="pagination__list">
+         <li class="pagination__list-item">
+          <a class="pagination__list-num pagination__list-num--active" href="#">1</a>
+         </li>
+         <li class="pagination__list-item">
+          <a class="pagination__list-num" href="#">2</a>
+         </li>
+        </ul>
+        <a class="pagination__arrow" href="#">
+         <img class="pagination__arrow-icon" src="images/icons/arrow-right.svg" alt="#">
+        </a>
+       </div> 
+      </div>
+      <aside class="blog__sidebar">
+       <form class="blog__form">
+        <input class="blog__search" type="text" placeholder="Search">
+        <button class="blog__btn" type="submit">
+         <img class="blog__btn-image" src="images/icons/search.svg" alt="search icon">
+        </button>
+       </form>
+       <div class="blog__category">
+        <h6 class="blog__category-title">
+         Categories
+        </h6>
+        <ul class="blog__category-list">
+         <li class="blog__category-item">
+          <a class="blog__category-link" href="#">Dining room (1)</a>
+         </li>
+         <li class="blog__category-item">
+          <a class="blog__category-link" href="#">Office furniture (12)</a>
+         </li>
+         <li class="blog__category-item">
+          <a class="blog__category-link" href="#">Simple interiror design (2)</a>
+         </li>
+         <li class="blog__category-item">
+          <a class="blog__category-link" href="#">Design (4)</a>
+         </li>
+         <li class="blog__category-item">
+          <a class="blog__category-link" href="#">Bedroom Furniture (1)</a>
+         </li>
+        </ul>
+       </div>
+       <div class="blog__posts">
+        <h6 class="blog__posts-title">
+         Recent Posts
+        </h6>
+        <ul class="blog__posts-list">
+         <li class="blog__posts-item">
+          <a class="blog__posts-name" href="#">
+           Cred selfies edison bulb four dollar toast humblebrag
+          </a>
+          <span class="blog__posts-date">August 10, 2020</span> |
+          <a class="blog__posts-author" href="#">by Ann Summers</a>
+         </li>
+         <li class="blog__posts-item">
+          <a class="blog__posts-name" href="#">
+           Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+          </a>
+          <span class="blog__posts-date">September 30 ,2020</span> |
+          <a class="blog__posts-author" href="#">by Ann Summers</a>
+         </li>
+         <li class="blog__posts-item">
+          <a class="blog__posts-name" href="#">
+           Cred selfies edison bulb four dollar toast humblebrag
+          </a>
+          <span class="blog__posts-date">May 2, 2020</span> |
+          <a class="blog__posts-author" href="#">by Ann Summers</a>
+         </li>
+        </ul>
+       </div>
+       <div class="blog__tags">
+        <h6 class="blog__tags-title">
+         Tags
+        </h6>
+        <a class="blog__tags-link" href="#">Dining room futniture</a>
+        <a class="blog__tags-link" href="#">Chair</a>
+        <a class="blog__tags-link" href="#">Table</a>
+        <a class="blog__tags-link" href="#">Bedroom</a>
+        <a class="blog__tags-link" href="#">Office Furniture</a>
+       </div>
+       <ul class="blog__social">
+        <li class="blog__social-item">
+         <a class="blog__social-link" href="#">
+          <img class="blog__social-image" src="images/social/facebook.svg" alt="facebook">
+         </a>
+        </li>
+        <li class="blog__social-item">
+         <a class="blog__social-link" href="#">
+          <img class="blog__social-image" src="images/social/instagram.svg" alt="instagram">
+         </a>
+        </li>
+        <li class="blog__social-item">
+         <a class="blog__social-link" href="#">
+          <img class="blog__social-image" src="images/social/pinterest.svg" alt="pinterest">
+         </a>
+        </li>
+        <li class="blog__social-item">
+         <a class="blog__social-link" href="#">
+          <img class="blog__social-image" src="images/social/whatsapp.svg" alt="whatsapp">
+         </a>
+        </li>
+        <li class="blog__social-item">
+         <a class="blog__social-link" href="#">
+          <img class="blog__social-image" src="images/social/twitter.svg" alt="twitter">
+         </a>
+        </li>
+       </ul>
+      </aside>
+     </div>
+   </section>
+  </main>
+  @include('./main/_footer.html')
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -11,7 +11,14 @@ $titleColor: #363838;
  font-weight: 600;
 }
 
+%open-light {
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 300;
+ font-style: italic;
+}
+
 %montserrat-bold {
  font-family: 'Montserrat', sans-serif;
  font-weight: 700;
+ font-style: normal;
 }

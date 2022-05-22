@@ -46,26 +46,4 @@
    max-width: 586px;
    width: 100%;
   }
-  .slick-dots {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 1px;
-   margin-top: -25px;
-   position: relative;
-   li {
-    &:not(:last-child) {
-     margin-right: 30px;
-    }
-   }
-   button {
-    background-color: $titleColor;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-   }
-  }
-  .slick-active button {
-   background-color: #FFEF35;
-  }
 }

@@ -1,0 +1,150 @@
+.blog {
+ padding: 60px 65px;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__items {
+  max-width: 730px;
+  width: 100%;
+ }
+ &__item {
+  margin-bottom: 80px;
+ }
+ &__image-link {
+  display: inline-block;
+  margin-bottom: 24px;
+ }
+ &__date,
+ &__author,
+ &__theme {
+  display: inline-block;
+  @include text(14px, 2);
+  @extend %open-semibold;
+  color: #707070;
+  margin-bottom: 9px;
+ }
+ &__item-title {
+  @include text(24px, 1.5);
+  @extend %montserrat-bold;
+  margin-bottom: 5px;
+ }
+ &__cite {
+  @include text(24px, 1.5);
+  @extend %open-light;
+  background-color: rgba(223, 223, 223, 0.5);
+  padding: 54px 65px;
+  text-align: center;
+  padding-bottom: 23px;
+  margin-bottom: 50px;
+
+ }
+ &__cite-author {
+  @include text(16px, 1.3);
+  @extend %montserrat-bold;
+  display: block;
+  padding-top: 23px;
+  margin-top: 23px;
+  position: relative;
+  &::before {
+   @include pseudo;
+   width: 200px;
+   height: 1px;
+   background-color: #6D7278;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+  }
+ }
+ &__popup-box {
+  position: relative;
+ }
+ &__popup-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ &__popup-image {
+  margin-bottom: 24px;
+ }
+ &__slider {
+  max-width: 730px;
+  width: 100%;
+ }
+ &__sidebar {
+  max-width: 350px;
+  width: 100%;
+ }
+ &__form {
+  position: relative;
+ }
+ &__search {
+  border: 1px solid rgba(#383636, 0.7);
+  border-radius: 20px;
+  padding: 6px 18px;
+  width: 100%;
+  margin-bottom: 40px;
+  &::placeholder {
+   @include text(14px, 2);
+   color: #A1A1A1;
+  }
+ }
+ &__btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+ }
+ &__category,
+ &__posts {
+  margin-bottom: 45px;
+ }
+ &__category-title,
+ &__posts-title,
+ &__tags-title {
+  @extend %montserrat-bold;
+  color: $titleColor;
+  margin-bottom: 14px;
+ }
+ &__category-item {
+  &:not(:last-child) {
+   margin-bottom: 12px;
+  }
+ }
+ &__posts-item {
+  &:not(:last-child) {
+   margin-bottom: 10px;
+  }
+ }
+ &__posts-name {
+  display: block;
+ }
+ &__posts-date,
+ &__posts-author {
+  @include text(14px, 2);
+  color: #A1A1A1;
+ }
+ &__tags {
+  margin-bottom: 60px;
+ }
+ &__tags-link {
+  display: inline-block;
+  @include text(14px, 2);
+  @extend %open-semibold;
+  color: #8F8D8D;
+  border: 1px solid rgba(#454647, 0.5);
+  border-radius: 14px;
+  padding: 0 16px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+ }
+ &__social {
+  display: flex;
+ }
+ &__social-item {
+  &:not(:last-child) {
+   margin-right: 20px;
+  }
+ }
+}
