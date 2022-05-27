@@ -2,20 +2,31 @@
  &__inner {
   padding-bottom: 70px;
   position: relative;
-   &::after {
-    position: absolute;
-    @include pseudo;
-    @include background(url("../images/top-bg.jpg"));
-    width: 100%;
-    height: 722px;
-    top: 0;
-    z-index: -1;
+  &::after {
+   position: absolute;
+   @include pseudo;
+   @include background(url("../images/top-bg.jpg"));
+   width: 100%;
+   height: 722px;
+   top: 0;
+   z-index: -1;
+   @include media-840 {
+    height: 100%;
    }
- } 
+  }
+  @include media-650 {
+   padding: 25px 0;
+  }
+ }
  &__slider-item {
   display: flex !important;
   justify-content: center;
   align-items: center;
+ }
+ &__slider-info {
+  @include media-650 {
+   padding: 0 10px;
+  }
  }
  &__slider-image {
   margin-right: 25px;
@@ -23,7 +34,18 @@
   height: 815px;
   object-fit: cover;
   margin-left: -10%;
+  @include media-1200 {
+   height: 640px;
+  }
+  @include media-840 {
+   height: 540px;
+   margin-right: 5px;
+  }
+  @include media-650 {
+   display: none !important;
+  }
  }
+
  &__slider-title {
   @include text(110px, 1.2);
   @extend %montserrat-bold;
@@ -33,17 +55,27 @@
   padding-bottom: 26px;
   margin-bottom: 24px;
   position: relative;
-   &::after {
-    @include pseudo;
-    width: 185px;
-    height: 1px;
-    background-color: #979797;
-    bottom: 5px;
-    left: 0;
-   }
+  &::after {
+   @include pseudo;
+   width: 185px;
+   height: 1px;
+   background-color: #979797;
+   bottom: 5px;
+   left: 0;
   }
-  &__slider-text {
-   max-width: 586px;
-   width: 100%;
+  @include media-1200 {
+   font-size: 62px;
   }
+  @include media-840 {
+   font-size: 44px;
+  }
+ }
+
+ &__slider-text {
+  max-width: 586px;
+  width: 100%;
+  @include media-650 {
+   margin-bottom: 15px;
+  }
+ }
 }

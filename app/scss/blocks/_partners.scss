@@ -4,8 +4,15 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 68px;
+  @include media-768 {
+   grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-576 {
+   grid-template-columns: repeat(2, 1fr);
+  }
  }
  &__logo {
   width: 100%;
+  margin: 0 auto;
  }
 }

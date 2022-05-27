@@ -41,6 +41,9 @@ body {
  @extend %montserrat-bold;
  @include text(36px, 1.4);
  color: $titleColor;
+ @include media-576 {
+  font-size: 28px;
+ }
 }
 
 .breadcrumbs {
@@ -68,6 +71,14 @@ body {
   @include text(14px,2);
  }
 }
+.map {
+ iframe {
+  height: 578px;
+  @include media-768 {
+   height: 300px;
+  }
+ }
+}
 
 .slick-dots {
  display: flex;
@@ -79,7 +90,13 @@ body {
  li {
   &:not(:last-child) {
    margin-right: 30px;
+   @include media-650 {
+    margin-right: 5px;
+   }
   }
+ @include media-840 {
+  margin-top: 25px;
+ } 
  }
  button {
   background-color: $titleColor;
@@ -102,13 +119,35 @@ body {
 .slick-next {
  right: 15px;
 }
-
-
+.slick-contacts {
+ position: absolute;
+ bottom: -60px;
+}
+.slick-left {
+ left: 40%;
+}
+.slick-right {
+ right: 40%;
+}
 .pagination {
  display: flex;
  justify-content: center;
  align-items: center;
  &__list {
   display: flex;
+ }
+ &__list-item {
+  margin: 0 6px;
+ }
+ &__arrow {
+  margin: 0 6px;
+  &--disable {
+   display: none;
+  }
+ }
+ &__list-num {
+  @include text(14px, 2);
+  @extend %open-semibold;
+  color: #707070;
  }
 }

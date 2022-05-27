@@ -1,0 +1,96 @@
+.comments {
+ &__title {
+  @include text(20px, 1.5);
+  @extend %montserrat-bold;
+  color: $titleColor;
+  margin-bottom: 10px;
+ }
+ &__box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  @include media-576 {
+   flex-wrap: wrap;
+  }
+ }
+ &__image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin-right: 13px;
+ }
+ &__info {
+  @include media-576 {
+   margin-top: -55px;
+  }
+ }
+ &__author {
+  @extend %montserrat-bold;
+  @include media-576 {
+   margin-left: 80px;
+  }
+ }
+ &__date {
+  @include text(14px, 2);
+  display: inline-block;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+  @include media-576 {
+   margin-left: 80px;
+  }
+ }
+ &__text {
+  color: $titleColor;
+ }
+ &__form-name {
+  @extend %montserrat-bold;
+  color: $titleColor;
+  margin-bottom: 25px;
+ }
+ &__entry {
+  width: 100%;
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  resize: none;
+  padding: 14px;
+  min-height: 125px;
+  margin-bottom: 12px;
+ }
+ &__fields {
+  display: flex;
+  margin-bottom: 21px;
+  input + input {
+   margin-left: 5px;
+  }
+  @include media-576 {
+   display: block;
+   input + input {
+    margin-left: 0;
+   }
+  }
+ }
+ &__field {
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  padding: 6px 15px;
+  max-width: 360px;
+  width: 100%;
+  @include media-576 {
+   max-width: 100%;
+   margin-bottom: 20px; 
+  }
+ }
+ &__label {
+  @include text(14px, 2);
+  color: #A1A1A1;
+  display: block;
+  margin-bottom: 16px;
+ }
+ &__btn {
+  @extend %open-semibold;
+  background-color: $titleColor;
+  color: #FFF;
+  border-radius: 21px;
+  padding: 6px 55px;
+ }
+}

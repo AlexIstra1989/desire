@@ -1,7 +1,37 @@
 .header {
  padding: 45px 0;
+ @include media-576 {
+  padding: 25px 0;
+ }
  &__inner {
   display: flex;
   align-items: center;
+  @include media-576 {
+   justify-content: space-between;
+   flex-wrap: wrap;
+   height: 40px;
+  }
  }
+ &__btn {
+  cursor: pointer;
+  @include media-768 {
+   display: none;
+  }
+ }
+ &__btn-menu {
+  display: none;
+  z-index: 777;
+  @include media-576 {
+   display: block;
+   order: -1;
+    span {
+     background-color: $titleColor;
+     width: 37px;
+     height: 3px;
+     border-radius: 4px;
+     display: block;
+     margin: 6px 0;
+    }
+  }
+ } 
 }

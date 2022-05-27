@@ -1,5 +1,8 @@
 .contacts {
  padding: 55px 0 100px;
+ @include media-576 {
+  padding: 40px 0;
+ }
  &__title {
   padding-bottom: 40px;
   margin-bottom: 40px;
@@ -53,9 +56,16 @@
   }
  }
  &__fields {
+  display: flex;
   margin-bottom: 13px;
   input + input {
    margin-left: 6px;
+  }
+  @include media-576 {
+   display: block;
+   input + input {
+    margin-left: 0;
+   }
   }
  }
  &__field {
@@ -65,6 +75,10 @@
   padding: 6px 16px;
   &::placeholder {
    color: #A1A1A1;
+  }
+  @include media-576 {
+   width: 100%;
+   margin-bottom: 10px;
   }
  }
  &__entry {
@@ -102,6 +116,16 @@
   object-fit: cover;
   width: 170px;
   height: 170px;
+  @include media-1730 {
+   width: 100%;
+  }
+  @include media-1200 {
+   height: 270px;
+  }
+  @include media-576 {
+   height: 380px;
+   margin-bottom: 20px;
+  }
  }
  &__slider-title {
   position: absolute;

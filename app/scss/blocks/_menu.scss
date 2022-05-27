@@ -1,21 +1,54 @@
 .menu {
  padding-left: 30px;
  padding-right: 60px;
+ @include media-768 {
+  padding-left: 15px;
+  padding-right: 30px;
+ }
+  @include media-576 {
+   padding-right: 0;
+   padding-left: 0;
+   width: 100%;
+   background-color: #FFF;
+   position: relataive;
+   z-index: 555;
+   text-align: center;
+   transform: translateY(-250%);
+   transition: all 0.5s;
+  &--active {
+    transform: translateY(25%);
+  }
+ }  
  &__list {
   display: flex;
+  @include media-576 {
+   display: block;
+  } 
  }
  &__item {
   &:not(:last-child) {
    margin-right: 80px;
   }
+  @include media-576 {
+   &:not(:last-child) {
+    margin-right: 0;
+   }
+  }
  }
  &__link {
   @extend %montserrat-bold;
+  @include media-576 {
+   display: block;
+   padding: 15px 0;
+  }
  }
  &__logo {
   margin: 0 auto;
- }
- &__btn {
-  cursor: pointer;
+  z-index: 9999;
+  @include media-576 {
+   margin: 0;
+   order: -1;
+   margin-right: 10px;
+  }
  }
 }

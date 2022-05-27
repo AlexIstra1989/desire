@@ -1,12 +1,23 @@
 .blog {
  padding: 60px 65px;
+ @include media-1080 {
+  padding-left: 0;
+  padding-right: 0;
+ }
  &__inner {
   display: flex;
   justify-content: space-between;
+  @include media-1080 {
+   flex-wrap: wrap;
+  }
  }
  &__items {
   max-width: 730px;
   width: 100%;
+  margin-right: 15px;
+  @include media-1080 {
+   max-width: 100%;
+  }
  }
  &__item {
   margin-bottom: 80px;
@@ -14,6 +25,14 @@
  &__image-link {
   display: inline-block;
   margin-bottom: 24px;
+  @include media-1080 {
+   width: 100%;
+  }
+ }
+ &__image {
+  @include media-1080 {
+   width: 100%; 
+  }
  }
  &__date,
  &__author,
@@ -68,14 +87,25 @@
  }
  &__popup-image {
   margin-bottom: 24px;
+  @include media-1080 {
+   width: 100%;
+  }
  }
  &__slider {
   max-width: 730px;
   width: 100%;
+  @include media-1080 {
+   max-width: 100%;
+  }
  }
  &__sidebar {
   max-width: 350px;
   width: 100%;
+  @include media-1080 {
+   max-width: 100%;
+   order: -1;
+   margin-bottom: 50px;
+  }
  }
  &__form {
   position: relative;

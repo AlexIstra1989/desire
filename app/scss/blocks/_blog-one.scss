@@ -1,0 +1,78 @@
+.blog-one {
+ padding: 60px 0 100px;
+ @include media-576 {
+  padding: 30px 0 40px;
+ }
+ &__item {
+  margin-bottom: 0;
+ }
+ &__text-box {
+  margin-bottom: 40px;
+ }
+ &__tags-title {
+  @include text(20px, 1.5);
+  @extend %montserrat-bold;
+  color: $titleColor;
+  margin-bottom: 6px;
+ }
+ &__tags {
+  margin-bottom: 40px;
+ }
+ &__tags-link {
+  @include text(14px, 2);
+  @extend %open-semibold;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #8F8D8D;
+  border: 1px solid rgba(#454647, 0.5);
+  border-radius: 14px;
+  padding: 6px 16px;
+  &:not(:last-child) {
+   margin-right: 23px;
+  }
+ }
+ &__links {
+  padding: 40px 0 32px;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  height: 130px;
+ }
+ &__link {
+  @include text(14px, 2);
+  @extend %open-semibold;
+  color: #707070;
+  max-width: 243px;
+  width: 100%;
+  position: relative;
+  &::before,
+  &::after {
+   @include pseudo;
+   width: 13px;
+   height: 25px;
+   top: 15px;
+  }
+  @include media-576 {
+   span {
+    display: none;
+   }
+  }
+ }
+ &__link-prev {
+  padding-left: 44px;
+  &::before {
+   @include background(url("../images/icons/arrow-left.svg"));
+   left: 0;
+  }
+ }
+ &__link-next {
+  padding-right: 44px;
+  text-align: right;
+  &::after {
+   @include background(url("../images/icons/arrow-right.svg"));
+   right: 0;
+  }
+ }
+}
